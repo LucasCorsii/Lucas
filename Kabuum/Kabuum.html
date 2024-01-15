@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>KaBuM! | Maior E-commerce de Tecnologia e Games</title>
+    <link rel="icon" href="IMG/logo1.png" type="img.png">
+</head>
+<style>
+    *{
+        margin: 0px;
+        padding: 0px;
+        border: none;
+        list-style: none;
+        box-sizing: border-box;
+        font-size: 16px;
+        font-family: Poppins, sans-serif !important;
+    }
+    .head {
+        display: flex;
+        border-bottom: 0.1875rem solid rgb(255, 101, 0);
+        max-width: 100vw;
+        width: 1920px;
+        min-height: auto;
+        min-width: auto;
+        height: 115px;
+    }
+    .Topo {
+        padding: 01.8125rem 0px;
+        width: 100%;
+        background-color: #0060b1;
+        height: 112px;
+        display: flex;
+    }
+    .logo img{
+        margin-top: -12px;
+        margin-left: 227px;
+    }
+    .logincadastro img{
+        margin-left: 823px;
+
+    }
+    .informacoes {
+        font-size:0.75rem;
+        line-height: 1.125rem;
+        color: rgba(255, 255, 255, 0.8);
+        margin-top: 9px;
+    }
+    .informacoes a{
+        text-decoration: none;
+        color: rgba(255, 255, 255, 0.8);
+        font-weight: 900;
+        font-size: 0.75rem;
+    }
+    .informacoes span{
+        font-size: 0.745rem;
+    }
+    .logo1 img {
+        margin-left: 28px;
+        margin-top: 11px;
+    }
+    
+    .meio {
+        display: grid;
+        grid-template-columns: 1fr;
+        -webkit-box-pack: center;
+        justify-content: center;
+    }
+    .login {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        max-width: 384px;
+    }
+    .area {    
+        display: flex;
+        flex-direction: column;
+        -webkit-box-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        justify-content: center;
+        width: 100%;
+        max-width: 384px
+    }
+    .input1 {
+        height: 3rem;
+        border: 1px solid rgb(127, 133, 141);
+        border-radius: 0.25rem;
+        text-align: center;
+        width: 384px;
+        margin-bottom: 8px;
+    }
+    .input2 {
+        height: 3rem;
+        border: 1px solid rgb(127, 133, 141);
+        border-radius: 0.25rem;
+        text-align: center;
+        width: 384px;
+        margin-bottom: 14px;
+    }
+    .email {
+        align-items: center;
+        justify-content: center;
+        width: 378px;
+        height: 2.9rem;
+    }
+    .meio2 {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem 0.75rem;
+        width: 100%;
+        margin-top: 63px;
+        align-items: center;
+        justify-content: center;
+    }
+    #titulo {
+        font-weight: bold;
+        color: rgb(255, 101, 0);
+        font-size: 1.5rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        position: relative;
+        margin-bottom: 1.5rem;
+        width: 200px;
+    }
+    .titulo1 { 
+        border-bottom:4px solid rgb(0, 96, 177);
+        height: 30px;
+        margin-bottom: 1.5rem;
+        width: 85px;
+        
+    }
+    .button {   
+        cursor: pointer;
+        flex-direction: row;
+        height: 3rem;
+        padding: 0.5rem 2.625rem;
+        width: 100%;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(255, 101, 0);
+        border: 1px solid rgb(255, 255, 255);
+        border-radius: 0.25rem;
+        margin-bottom: 10px;
+    }
+    .button2 {
+        background-color: rgb(238, 102, 11);
+        font-size: 1.125rem;
+        line-height: 2rem;
+        font-weight: 600;
+        color: rgb(255, 255, 255);
+    }
+    .senha {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 1rem;
+    }
+    .senha a{
+        color: rgb(127, 133, 141);
+        font-size:0.75rem;
+    }
+    .area hr{
+        width: 100%;
+        max-width: 384px;
+        border-bottom: 1px solid rgb(222, 224, 228);
+        margin-bottom: 1rem;
+        margin-top: 0.5rem;
+    }
+    .spn {
+        font-size: 1rem;
+        line-height: 1.125rem;
+        font-weight: 400;
+        color: rgb(127, 133, 141);
+        gap: 0.25rem;
+    }
+    .spn a{ 
+        font-size: 1rem;
+        line-height: 1.125rem;
+        font-weight: 700;
+        color: rgb(241, 128, 21);
+        cursor: pointer;
+    }
+    .area2 {
+        width: 100%;
+        display: inline-block;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 2rem;
+    }
+    .titulo2 {   
+        display: flex;
+        color: rgb(127, 133, 141);
+        align-items: center;
+        justify-content: center;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+    }
+    .redes {
+        gap: 0.5rem;
+    }
+    .foot {
+        max-width: 100vw;
+        background-color: white;
+        width: 1920px;
+    }
+    .fcima {
+        width: 100%;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        width: 100%;
+        display:inline-flex;
+        box-sizing: border-box;
+        background-color: transparent;
+        gap: 6rem;
+        margin-top: 115px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .fmeio {
+        display: flex;
+        text-align: justify;
+        -webkit-box-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        align-items: center;
+        padding: 1rem;
+        background: rgb(0, 96, 177);
+        gap: 2rem;
+        height: 60px;
+    }
+    .fmeio a{
+        font-size: 0.625rem;
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+    }
+    .fbaixo {
+        text-align: center;
+        -webkit-box-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        align-items: center;
+        padding: 1rem;
+        background: rgb(0, 58, 106);
+        gap: 2rem;
+        height: 70.4px;
+    }
+    .fcima2 .fbaixo2 {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .fcima2 span{
+        text-align: center;
+        font-size: 0.625rem;
+        color: rgb(255, 255, 255);
+    }
+    .fbaixo2 span{
+        text-align: center;
+        font-size: 0.625rem;
+        color: rgb(255, 255, 255);
+    }
+</style>
+<body>
+    <div class="container">
+        <header class="head">
+            <div class="Topo">
+                <div class="logo">
+                    <a href="#"><img src="Imagens/logo.png""></a>
+                </div>
+                <div class="logincadastro">
+                    <img src="Imagens/homem.png">
+                </div>
+                <div class="informacoes">
+                    <span>
+                        Faça <a href="#">LOGIN</a> ou<p> crie seu <a href="#">CADASTRO</a>
+                    </span>
+                </div>
+                <div class="logo1">
+                    <img src="Imagens/logo2.png">
+                 </div>
+        </header>
+        <div class="meio">
+            <div class="meio2">
+                    <div class="area">
+                        <form>
+                            <div class="titulo1">
+                                <h2 id="titulo">FAZER LOGIN</h2>
+                            </div>
+                            <div class="input1">
+                                <input type="text" class="email" name="email" id="email" placeholder="E-mail, CPF ou CNPJ" autofocus="1" aria-label="E-mail, CPF ou CNPJ"> 
+                            </div>
+                            <div class="input2">
+                                <input type="text" class="email" name="email" id="email" placeholder="Senha" autofocus="1" aria-label="Senha"> 
+                            </div>
+                            
+                            <div class="button">
+                                <input value="ENTRAR" class="button2" name="login" type="submit"></input>
+                            </div>
+                            <div class="senha">
+                                <a href="#">Esqueceu a senha?</a>
+                            </div>
+                        </form>
+                        <hr>
+                        <div class="area2">
+                            <span class="titulo2">Quero acessar com minhas redes sociais</span>
+                            <div class="redes">
+                                <a href="#"><img src="Imagens/face.png"></a>
+                                <a style="margin-left: 21.5px;" href="#"><img src="Imagens/google.png"></a>
+                            </div>
+                        </div>
+                        <span class="spn">Novo no KaBuM!  <a href=#>CADASTRE-SE</a></span>
+                    </div>
+            </div>
+        </div>
+        <footer class="foot">
+            <div class="fcima">
+                <div class="emp">
+                    <img src="">
+                </div>
+                <div class="go">
+                    <img src="Imagens/siteblindado.png" width="170px margin-left="100px">
+                </div>
+                <div class="ebit">
+                    <img src="Imagens/buscapé.png">
+                </div>
+                <div class="fant">
+                    <img src="Imagens/googleseguro.png">
+                </div>
+                <div class="emp2">
+                    <img src="Imagens/ebit.png">
+                </div>
+                <div class="emp1">
+                    <img src="Imagens/Fantastica.png">
+                </div>
+                <div class="emp4">
+                    <img src="Imagens/Reclame aqui.png">
+                </div>
+                <div class="emp3">
+                    <img src="Imagens/alien.png" width="150px">
+                </div>
+            </div>
+            <div class="fmeio">
+                <div class="fmeio1">
+                    <a href="#">Políticas do Site e Marketplace</a>
+                </div>
+                <div class="fmeio2">
+                    <a href="#">Políticas de Privacidade</a>
+                </div>
+                <div class="fmeio3">
+                    <a href="#">Exerça seus Direitos de Privacidade</a>
+                </div>
+            </div>
+            <div class="fbaixo">
+                <div class="fcima2">
+                    <span>KaBuM!® é uma marca registrada de KABUM S.A | CNPJ: 05.570.714/0001-59 | Todos os direitos reservados. Os preços anunciados neste site ou via e-mail promocional podem ser alterados sem prévio aviso. O KaBuM! não é responsável por erros descritivos. As fotos contidas nesta página</span>
+                </div>
+                <div class="fbaixo2">
+                    <span>são meramente ilustrativas do produto e podem variar de acordo com o fornecedor/lote do fabricante. Este site trabalha 100% em criptografia SSL.  Clique aqui e veja as políticas de nossa empresa.</span>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html
